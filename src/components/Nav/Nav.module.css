@@ -1,0 +1,106 @@
+.navi{
+  display:flex;
+  flex-direction: column;
+  padding: clamp(20px, 25vh, 150px) 0 clamp(20px, 25vh, 150px) 0;
+  align-items: center;
+  justify-content: space-between;
+  width: clamp(100px, 25vw, 350px);
+  background-color: black;
+}
+
+.naviLabelContainer{
+  height: clamp(1.1rem, 5.5vh, 1.76rem);
+  width: clamp(80px, 20vw, 280px);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.naviLabel{
+  /* margin: 0 clamp(20px, 15vw, 100px) 0 clamp(20px, 15vw, 100px); */
+  text-decoration: none;
+  color: white;
+  font-size: clamp(1rem, 5vh, 1.6rem);
+  font-weight: 600;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.naviLabel:hover{
+  color: rgb(54, 184, 93) !important;
+  font-size: clamp(1.1rem, 5.5vh, 1.76rem);
+  /* transition: color 0.05s; */  
+}
+
+.naviSmall{
+  display: none;
+}
+
+.arrowLeft {
+  width: 0; 
+  height: 0; 
+  border-top: 0.6rem solid transparent;
+  border-bottom: 0.6rem solid transparent; 
+  border-right:1.2rem solid white; 
+}
+
+.arrowLeft:hover{
+  border-top: 0.8rem solid transparent;
+  border-bottom: 0.8rem solid transparent; 
+  border-right:1.5rem solid rgb(54, 184, 93);
+}
+
+
+.arrowRight {
+  width: 0; 
+  height: 0; 
+  border-top: 0.6rem solid transparent;
+  border-bottom: 0.6rem solid transparent; 
+  border-left:1.2rem solid white; 
+}
+
+.arrowRight:hover{
+  border-top: 0.8rem solid transparent;
+  border-bottom: 0.8rem solid transparent; 
+  border-left:1.5rem solid rgb(54, 184, 93);
+}
+
+.arrowContainer{
+  width: 5rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 650px){
+  .navi{
+    display: none;
+  }
+  .naviLabel:hover{
+    font-size: 2rem;
+    color: white !important;
+  }
+  .naviLabel{
+    font-size: 2rem;
+  }
+  .naviLabelContainer{
+    height: 2.2rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .naviSmall{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    height: clamp(60px, 15vh, 200px);
+  }
+}
+

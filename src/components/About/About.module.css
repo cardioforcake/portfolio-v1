@@ -1,0 +1,19 @@
+.one, .two, .three, .four, .five{
+  transition: opacity 0.5s;
+}
+
+.two{
+  transition-delay: 600ms;
+}
+
+.three{
+  transition-delay: 800ms;
+}
+
+.four{
+  transition-delay: 1050ms;
+}
+
+.five{
+  transition-delay: 1250ms;
+}

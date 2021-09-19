@@ -1,0 +1,103 @@
+.homeContent{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro{
+  width: 80%;
+}
+
+.delayedLetters{
+  transition: opacity 0.5s;
+  color:white;
+  font-size: 4vw;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+}
+
+.delayedLetters:hover{
+  animation: grow 0.5s ease-out;
+}
+
+.delayedLtrsContainer{
+  height: 5vw;
+  display:flex;
+  align-items: flex-end;
+}
+
+@keyframes grow {
+  0% { font-size: 4vw; }
+  25% {font-size: 4.15vw; color: rgb(54, 184, 93)}
+  50% {font-size: 4.25vw; }
+  75% {font-size: 4.15vw; color: rgb(54, 184, 93)}
+  100%{font-size: 4vw;}
+}
+
+
+@-webkit-keyframes wiggle{
+  from{
+    -webkit-transform: rotate(10deg);
+  }
+  to{
+    -webkit-transform: rotate(-10deg);
+    -webkit-transform-origin: center center;
+  }
+}
+
+
+#ltr1{
+  width: 5.5vw;
+}
+#ltr2{
+  transition-delay: 600ms;
+  width: 6.75vw;
+}
+#ltr3{
+  transition-delay: 800ms;
+  width: 11.5vw;
+}
+#ltr4{
+  transition-delay: 1050ms;
+  width: 4.2vw;
+}
+#ltr5{
+  transition-delay: 1250ms;
+  width: 10vw;
+}
+#ltr6{
+  transition-delay: 1550ms;
+  width: 3.25vw;
+}
+#ltr7{
+  transition-delay: 1750ms;
+  width: 19.5vw;
+  white-space: nowrap;
+}
+#ltr8{
+  transition-delay: 2000ms;
+  width: 8.75vw;
+}
+#ltr9{
+  transition-delay: 2200ms;
+  width: 19vw;
+}
+#ltr10{
+  transition-delay: 2800ms;
+  width: 17.75vw;
+}
+#ltr11{
+  transition-delay: 3000ms;
+  width: 5vw;
+}
+#ltr12{
+  transition-delay: 3200ms;
+  width: 6.75vw;
+}
+#ltr13{
+  transition-delay: 3400ms;
+  width: 17.5vw;
+}
