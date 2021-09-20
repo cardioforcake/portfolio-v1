@@ -4,10 +4,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .intro{
   width: 80%;
+}
+
+.contactBtnContainer{
+  width: 80%;
+  margin-top: 2vh;
+  height: 5.5vw;
+  transition: opacity 0.5s;
+  transition-delay: 4200ms;
+}
+
+.contactBtn{
+  width: 15vw;
+  height: 5vw;
+  font-size: 2vw;
+  color:  rgb(18, 61, 31);
+  border-radius: 0.75vw;
+  box-shadow: 2px 2px 1px 1px  rgb(54, 184, 93);
+  transition: box-shadow 0.02s ease-out;
+
+}
+
+.contactBtn:active{
+  box-shadow: none;
+  margin-left: 1px;
+  margin-top: 1px;
 }
 
 .delayedLetters{
@@ -50,54 +76,60 @@
 
 
 #ltr1{
+  transition-delay: 200ms;
   width: 5.5vw;
 }
 #ltr2{
-  transition-delay: 600ms;
+  transition-delay: 700ms;
   width: 6.75vw;
 }
 #ltr3{
-  transition-delay: 800ms;
+  transition-delay: 900ms;
   width: 11.5vw;
 }
 #ltr4{
-  transition-delay: 1050ms;
-  width: 4.2vw;
+  transition-delay: 1150ms;
+  width: 4.5vw;
 }
 #ltr5{
-  transition-delay: 1250ms;
+  transition-delay: 1350ms;
   width: 10vw;
 }
 #ltr6{
-  transition-delay: 1550ms;
-  width: 3.25vw;
-}
-#ltr7{
-  transition-delay: 1750ms;
-  width: 19.5vw;
-  white-space: nowrap;
-}
-#ltr8{
-  transition-delay: 2000ms;
-  width: 8.75vw;
-}
-#ltr9{
-  transition-delay: 2200ms;
-  width: 19vw;
-}
-#ltr10{
-  transition-delay: 2800ms;
-  width: 17.75vw;
-}
-#ltr11{
-  transition-delay: 3000ms;
-  width: 5vw;
-}
-#ltr12{
-  transition-delay: 3200ms;
+  transition-delay: 1650ms;
   width: 6.75vw;
 }
+#ltr7{
+  transition-delay: 1950ms;
+  width: 3.25vw;
+}
+#ltr8{
+  transition-delay: 2200ms !important;
+  width: 19.25vw;
+  transition: opacity 0.65s;
+  white-space: nowrap;
+}
+#ltr9{
+  transition-delay: 2500ms;
+  width: 8.75vw;
+}
+#ltr10{
+  transition-delay: 2700ms;
+  width: 19vw;
+}
+#ltr11{
+  transition-delay: 3100ms;
+  width: 17.75vw;
+}
+#ltr12{
+  transition-delay: 3300ms;
+  width: 5vw;
+}
 #ltr13{
-  transition-delay: 3400ms;
+  transition-delay: 3500ms;
+  width: 6.75vw;
+}
+#ltr14{
+  transition-delay: 3700ms;
   width: 17.5vw;
 }

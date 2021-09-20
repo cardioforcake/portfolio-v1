@@ -4,7 +4,7 @@ import {useEffect, useState} from 'react'
 import { __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED } from 'react';
 import {scrollRight, scrollLeft} from '../service-functions/service-functions'
 
-const route = ['/home','/about','/projects','/contact']
+const route = ['/','/about','/projects','/contact']
 const label = ['HOME','ABOUT','PROJECTS','CONTACT']
 
 function Nav(props){
@@ -15,7 +15,7 @@ function Nav(props){
     <>
     <nav className={styles.navi}>
         <div className={styles.naviLabelContainer}>
-          <Link to="/home" className={styles.naviLabel}>
+          <Link to="/" className={styles.naviLabel}>
             HOME
           </Link>
         </div>
@@ -40,7 +40,7 @@ function Nav(props){
         contentPage > 0 ?
         <div 
           className={styles.arrowContainer} 
-          onClick={()=>{scrollLeft(contentPage, setContentPage, history, route[contentPage])}}
+          onClick={()=>{scrollLeft(contentPage, setContentPage, history, route[contentPage-1])}}
         >
           <div className={styles.arrowLeft}></div>
         </div>
@@ -48,16 +48,13 @@ function Nav(props){
         <div className={styles.arrowContainer}></div>
       }  
       <div className={styles.naviLabelContainer}>
-      
-        <Link to={route[contentPage]} className={styles.naviLabel}>
-          {label[contentPage]}
-        </Link>
+        {label[contentPage]}
       </div>
       {
             contentPage < 3 ?
             <div 
               className={styles.arrowContainer} 
-              onClick={()=>{scrollRight(contentPage, setContentPage, history, route[contentPage])}}>
+              onClick={()=>{scrollRight(contentPage, setContentPage, history, route[contentPage+1])}}>
               <div className={styles.arrowRight}></div>
             </div>
             :
