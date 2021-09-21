@@ -1,0 +1,78 @@
+.projectContents{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.projectContainer{
+  margin-top: 8vh;
+  margin-bottom: 15vh;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.projectPreview{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 70vh;
+}
+
+.gridContainer{
+  display: grid;
+  width: 100%;
+  height: 60vh;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+}
+
+#lookupDesktop{
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 10;
+  width: 100%;
+}
+
+#lookupMobile{
+  grid-column-start: 5;
+  grid-column-end: 10;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  width: 100%;
+}
+
+#calendarConnectDesktop{
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 2;
+  grid-row-end: 10;
+  width: 100%;
+}
+
+/* .projectDescContainer{
+  color: white;
+  width: 40%;
+  min-height: 40vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.projectDesc{
+  width: 95%;
+  font-size: 3vh;
+}
+
+.projectLinks{
+  margin-top: 2rem;
+} */

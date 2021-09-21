@@ -1,19 +1,111 @@
-.one, .two, .three, .four, .five{
-  transition: opacity 0.5s;
+.aboutContent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
-.two{
-  transition-delay: 600ms;
+#profilePic{
+  height: 40vh;
 }
 
-.three{
-  transition-delay: 800ms;
+.profilePicContainer{
+  margin-right: 2vw;
+  margin-left: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.four{
-  transition-delay: 1050ms;
+.aboutText{
+  font-size: 4.5vh;
+  min-height: 40vh;
+  min-width: 35vw;
+  max-width: 55vw;
+  /* margin-right: 2vw; */
+  /* margin: auto 2vw auto 0; */
+  /* margin-top: 1vh; */
 }
 
-.five{
-  transition-delay: 1250ms;
+/* @media (max-width: 800px){
+  .aboutText{
+    margin-top: 4vh;
+  }
+} */
+
+.iconImg{
+  width: 2.75rem;
+
+}
+
+.icon{
+  margin: 0.5rem 0 0.5rem 0;
+} 
+
+.iconContainer{
+  margin-left: 2rem;
+  margin-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  justify-content: space-evenly;
+}
+
+.parContent{
+  transition: opacity 1s ease-out, padding-bottom 1s, color 1s;
+  margin: 0;
+}
+
+.parContent:hover{
+  color: rgb(54, 184, 93) !important;
+  transition: color 0.5s !important;
+}
+
+#p2{
+  transition-delay: 200ms;
+}
+
+#p3{
+  transition-delay: 300ms;
+}
+
+#p1{
+  transition-delay: 300ms;
+}
+
+#resumeText{
+  text-decoration: none;
+  color: white;
+  writing-mode: vertical-rl;
+  font-size: 2.5rem;
+  font-weight: 1000;
+}
+
+@media (max-width: 650px){
+  .aboutContent{
+    flex-direction: column;
+  }
+
+  .iconContainer{
+    flex-direction: row;
+  }
+
+  .icon{
+    margin:  0 0.5rem 0 0.5rem;
+  }
+
+  #resumeText{
+    writing-mode: horizontal-tb
+  }
+
+  .profilePicContainer{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .aboutText{
+    max-width: 90vw;
+    text-align: center;
+  }
 }

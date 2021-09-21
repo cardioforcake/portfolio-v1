@@ -1,0 +1,33 @@
+.projectDescContainer{
+  color: white;
+  width: 40%;
+  min-height: 40vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.projectDesc{
+  width: 95%;
+  font-size: 3vh;
+}
+
+.projectLinks{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+}
+
+.visitBtn{
+  text-decoration: none;
+  color: white;
+  font-weight: 1000;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.iconImg{
+  width: 2.5rem;
+}
