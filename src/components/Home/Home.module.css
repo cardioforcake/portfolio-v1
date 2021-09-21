@@ -135,6 +135,10 @@
 }
 
 @media (max-width: 650px){
+  .homeContent{
+    justify-content: flex-start;
+    margin-top: 15vh;
+  }
 
   .delayedLtrsContainer{
     height: 6;
@@ -159,7 +163,7 @@
 
   .intro{
     width: 70vw;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   .contactBtnContainer{
@@ -169,10 +173,10 @@
   }
 
   .contactBtn{
-    width: 21vw;
-    height: 7vw;
-    font-size: 2.8vw;
-    border-radius: 0.9375vw;
+    width: 24vw;
+    height: 8vw;
+    font-size: 3.2vw;
+    border-radius: 1.2vw;
   }
 
   #ltr1{
