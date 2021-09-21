@@ -37,7 +37,7 @@
 #lookupDesktop{
   grid-column-start: 1;
   grid-column-end: 9;
-  grid-row-start: 3;
+  grid-row-start: 2;
   grid-row-end: 10;
   width: 100%;
 }
@@ -50,11 +50,35 @@
   width: 100%;
 }
 
-#calendarConnectDesktop{
+#calendarConnectDesktop, #gameCentreDesktop{
   grid-column-start: 1;
   grid-column-end: 10;
   grid-row-start: 2;
   grid-row-end: 10;
+  width: 100%;
+}
+
+#fizenDesktop{
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 2;
+  grid-row-end: 10;
+  width: 100%;
+}
+
+#fizenMobile{
+  grid-column-start: 5;
+  grid-column-end: 10;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  width: 100%;
+}
+
+#fizenTablet{
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 8;
   width: 100%;
 }
 

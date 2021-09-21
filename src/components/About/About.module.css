@@ -82,6 +82,16 @@
   font-weight: 1000;
 }
 
+#connect{
+  color: rgb(54, 184, 93);
+  font-weight: 500;
+}
+
+#connect:hover{
+  cursor: pointer;
+}
+
+
 @media (max-width: 650px){
   .aboutContent{
     flex-direction: column;

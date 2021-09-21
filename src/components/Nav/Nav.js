@@ -1,6 +1,6 @@
 import {Link, useHistory} from 'react-router-dom';
 import styles from './Nav.module.css'
-import {useEffect, useState} from 'react'
+import {useState} from 'react'
 import { __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED } from 'react';
 import {scrollRight, scrollLeft} from '../service-functions/service-functions'
 

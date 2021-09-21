@@ -9,7 +9,7 @@ function ProjectDesc(props){
       <div className={styles.projectLinks}>
         <a href={props.projectHref} className={styles.visitBtn} target="_blank">VISIT WEBSITE</a>
         <a href={props.projectGitHub} target="_blank" className={styles.icon}>
-          <img src="/github.png" className={styles.iconImg}></img>
+          <img alt="GitHub ink" src="/github.png" className={styles.iconImg}></img>
         </a>
       </div>
     </div>

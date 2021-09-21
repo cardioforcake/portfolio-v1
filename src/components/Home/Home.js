@@ -1,9 +1,12 @@
 import {useEffect, useState} from 'react'
-import {useHistory} from 'react-router-dom'
 import styles from './Home.module.css'
+import {useHistory} from 'react-router-dom'
+import {navigate} from '../service-functions/service-functions'
 
 function Home(props){
   const [ltrOpacity, setLtrOpacity]= useState(0)
+
+  const history = useHistory()
 
   useEffect(()=>{
     setLtrOpacity(1);
@@ -35,7 +38,7 @@ function Home(props){
         </p>
       </div>
       <div className={styles.contactBtnContainer} style={{opacity: ltrOpacity}}>
-        <button className={styles.contactBtn}>Contact Me</button>
+        <button className={styles.contactBtn} onClick={()=>{navigate('/contact', history)}}>Contact Me</button>
       </div>
 
     </div>

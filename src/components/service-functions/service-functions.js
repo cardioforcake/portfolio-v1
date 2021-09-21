@@ -9,4 +9,8 @@ function scrollLeft(curr, setCurr, history, route){
 }
 
 
-export {scrollRight, scrollLeft}
+function navigate(route, history){
+  history.push(route)
+}
+
+export {scrollRight, scrollLeft, navigate}
